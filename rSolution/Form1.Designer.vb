@@ -22,78 +22,41 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.intrBtn = New System.Windows.Forms.Button()
+        Me.lstB = New System.Windows.Forms.ListBox()
         Me.SuspendLayout()
         '
-        'Label1
+        'intrBtn
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(0, 0)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(53, 20)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Label1"
+        Me.intrBtn.Location = New System.Drawing.Point(33, 370)
+        Me.intrBtn.Name = "intrBtn"
+        Me.intrBtn.Size = New System.Drawing.Size(224, 50)
+        Me.intrBtn.TabIndex = 0
+        Me.intrBtn.Text = "Introduzir"
+        Me.intrBtn.UseVisualStyleBackColor = True
         '
-        'Label2
+        'lstB
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(8, 8)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(53, 20)
-        Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Label2"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(16, 16)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(53, 20)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Label3"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(24, 24)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(53, 20)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "Label4"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(32, 32)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(53, 20)
-        Me.Label5.TabIndex = 4
-        Me.Label5.Text = "Label5"
+        Me.lstB.FormattingEnabled = True
+        Me.lstB.ItemHeight = 20
+        Me.lstB.Location = New System.Drawing.Point(288, 12)
+        Me.lstB.Name = "lstB"
+        Me.lstB.Size = New System.Drawing.Size(500, 424)
+        Me.lstB.TabIndex = 1
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.lstB)
+        Me.Controls.Add(Me.intrBtn)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
+    Friend WithEvents intrBtn As Button
+    Friend WithEvents lstB As ListBox
 End Class
